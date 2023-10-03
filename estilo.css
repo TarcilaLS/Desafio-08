@@ -1,0 +1,148 @@
+html{
+    font-family: sans-serif;    
+}
+
+body{
+    background-image: url(Imagens/Stardew\ Valley\ 4.jpg);
+    background-size: 110vw 430px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;           
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #F2CC85;    
+}
+
+.header_logo{
+    width: 8em;
+    height: auto;
+}
+
+#hamburguer{
+    background-color: #400904;
+    color: #F2CC85;
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.headernav{
+    background-color: #F2CC85;
+    display: none;
+}
+
+.headernav.show{
+    display: block;
+}
+
+ul{
+    margin: 0;
+}
+
+.headernav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8em;
+}
+
+.headernav a{
+    color: #400904;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.headernav a:hover{
+    background-color: color-mix(in srgb, #D96941, #ffffff 10%);
+    color: #F2CC85;    
+}
+
+footer{
+    background-color: #F2CC85;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 12em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+p{
+    margin: 0;
+    padding: 1.5em;
+    color: #400904;
+}
+
+.footer_logo{
+    display: flex; 
+    flex-direction: column;   
+    gap: 1em;
+    margin: .5em;    
+}
+
+.tamanho{
+    width: 2.5em;    
+}
+
+@media screen and (min-width: 48em){
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F2CC85;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .headernav{
+        display: block;
+    }
+
+    .headernav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .headernav li{
+        display: inline-block;
+    }
+
+    .headernav a{
+        border-radius: 5px;
+    }  
+    
+    body{
+        background-image: url(Imagens/Stardew\ Valley.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;        
+    }
+
+    footer{
+        height: 10em;       
+    }
+
+    .footer_logo{
+        flex-direction: row;
+        justify-content: center;
+        gap: 1em;        
+        margin-top: 2em;
+    }    
+
+    .tamanho{
+        width: 3em;
+    }
+}
